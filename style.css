@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    /* ackgbround-image: url("form.jpg.jpg"); */
+    background-color: hsla(265, 35%, 93%, 0.885);
+    
+
+
+section {
+    margin-top: 50px;
+}
+body {
+    position: relative;
+}
+html {
+    scroll-behavior: smooth;
+    font-size: 62.5%;
+}
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    padding: 0 10%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(255 255 255 /0.9);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 10;
+}
+.menu {
+    display: flex;
+}
+.logo {
+    color: #27ae60;
+    font-weight: 700;
+    font-size: 25px;
+}
+.logo span {
+    color: #273e60;
+}
+.menu li {
+   margin: 0 15px;
+   list-style: none;
+   background: 20px;
+}
+.menu li a {
+    font-size: 14px;
+    text-decoration: 0;
+    color: #010506;
+    position: relative;
+}
+.menu li a::before {
+    position: absolute;
+    top: -5px;
+    left: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #07130c;
+    transition: 0.5s;
+}
+.menu li a:hover::before {
+    width: 100%;
+}
+.menu li a::after {
+    position: absolute;
+    bottom: -5px;
+    right: 0;
+    content: "";
+    width: 0;
+    height: 2px;
+    border-radius: 6px;
+    background-color: #27ae60;
+    transition: 0.5s;
+}
+.menu li a:hover::after {
+    width: 100%;
+}
+.menu li a:hover {
+    color: #000;
+}
+#reservation {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#reservation form {
+    display: flex;
+    background-color: rgba(0,0,0,0.05);
+    padding: 25px;
+    border-radius: 6px;
+    flex-direction: column;
+    width: 350px;
+}
+#reservation form  label {
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+#reservation form input {
+    margin-bottom: 10px;
+   padding: 5px;
+   border: 1px solid transparent;
+   box-shadow: 0 0 10px rgba(0,0,0,0.05);
+   outline: 0;
+}
+#reservation form input:focus {
+    outline: 1px solid #27ae60;
+}
+#reservation form input[type="submit"]{
+    margin-top: 15px;
+    color: #fff;
+    background-color: #27ae60;
+    border: 1px solid #27ae60;
+}
+.ima{
+    position: relative;
+}
+/* .div img {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+
+    margin-top: 5;
+    margin: 5px;
+    padding: 12px;
+    width: 100px;
+    height: auto;
+    margin-bottom: 15px; */
+}
+
+}
+
+
+
+
+
+
+
+/* *{
+    font-family: "Montserrat";
+}
+
+body{
+    margin: 0 auto;
+    padding: 0px;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+    background-color: rgb(247, 242, 242);
+    position:absolute;
+    font-weight: bold;
+    background-image: url("images.jpg.png");
+    background-size: cover;
+    transition: transform 0.5s;
+}
+
+header.header {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+
+nav.nav li a{
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 400px;
+    margin-left: 30px;
+}
+.menu{
+    position: fixed;
+    left: 0;
+    width: 60px;
+    color: rgb(3, 3, 15);
+}    
+
+form h1{
+    /* font-size: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 80px;
+}
+.classe {
+    margin: auto;
+    padding-bottom: 50px;
+}
+
+.nav{
+    display: table;
+    margin: 0 auto;
+}
+.cadd:hover{
+    background-color: rgba(252, 252, 252, 0.2);
+    border-top: 8px solid white;
+    transition: transform 0.5s;
+    
+    
+}
+.csoust:hover{
+    background-color: rgba(252, 252, 252, 0.2);
+    border-top: 8px solid white;
+}
+.cmult:hover{
+    background-color: rgba(252, 252, 252, 0.2);
+    border-top: 8px solid white;
+}
+.cdiv:hover{
+    background-color: rgba(252, 252, 252, 0.2);
+    border-top: 8px solid white;
+}
+.a:hover{
+    padding: 15px 30px;
+}
+boutton{
+    color: white;
+    height:40px;
+    background: blue;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bolder;
+    font-size: 25px;
+    }
+    #boutton:active{
+    background: orangered;
+    }
+    #boutton:hover{
+        transform: scale(1.05);
+    }
+    input, button {
+        margin-bottom: 10px;
+        padding: 5px;
+    }
+    
+    button {
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+    
+    button:hover {
+        opacity: 0.8;
+    }
+    
+
+   
+     */
+
